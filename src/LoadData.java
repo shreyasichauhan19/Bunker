@@ -39,13 +39,13 @@ public class LoadData
 	            String command = scanner.next();
 	            if (command.trim().equals(""))
 	                continue;
-	            System.out.println(command);        // Uncomment if want to see commands executed
+	            System.out.println(command);        
 	            try
 	            {
 	            	stmt.execute(command);
 	            }
 	            catch (Exception e)
-	            {	// Keep running on exception.  This is mostly for DROP TABLE if table does not exist.
+	            {	
 	            	System.out.println(e);
 	            }
 	        }	 
